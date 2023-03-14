@@ -13,15 +13,34 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
-  font-size: 23px;
+  font-size: 20px;
   margin: 30px;
+  letter-spacing: 1px;
 }
 
 .container1 {
   display: flex;
 }
 
+#title {
+  font-size: 30px;
+}
+
+.link1 {
+  color: white;
+  text-decoration: none;
+}
+
 #trapezoid {
+  flex: (1000, 50);
+  width: 10000px;
+  height: 150px;
+  background: #040a44;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+#trapezoid2 {
+  position: fixed;
   flex: (1000, 50);
   width: 10000px;
   height: 150px;
