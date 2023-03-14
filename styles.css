@@ -4,6 +4,17 @@ body {
   padding: 0;
 }
 
+.bigtext {
+  font-family: "Jost", sans-serif;
+}
+
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
 .container1 {
   display: flex;
 }
@@ -13,6 +24,6 @@ body {
   flex: (1000, 50);
   width: 10000px;
   height: 150px;
-  background: #09157c;
+  background: #040a44;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
