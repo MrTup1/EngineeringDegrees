@@ -2,6 +2,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .bigtext {
@@ -22,6 +25,11 @@ body {
   display: flex;
 }
 
+.container2 {
+  display: flex;
+  flex-basis: 200;
+}
+
 #title {
   font-size: 30px;
 }
@@ -31,7 +39,11 @@ body {
   text-decoration: none;
 }
 
-#trapezoid {
+#test {
+  flex: 1;
+}
+
+#trapezoid1 {
   flex: (1000, 50);
   width: 10000px;
   height: 150px;
@@ -40,10 +52,9 @@ body {
 }
 
 #trapezoid2 {
-  position: fixed;
   flex: (1000, 50);
   width: 10000px;
   height: 150px;
   background: #040a44;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
