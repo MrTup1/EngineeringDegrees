@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  display: flex;
+}
+
+#trapezoid {
+  display: flex;
+  flex: (1000, 50);
+  width: 10000px;
+  height: 150px;
+  background: #09157c;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
