@@ -6,12 +6,14 @@ body {
 
 .bigtext {
   font-family: "Jost", sans-serif;
+  font-weight: bold;
 }
 
 .header {
   color: white;
   display: flex;
   justify-content: space-between;
+  font-size: 23px;
   margin: 30px;
 }
 
@@ -20,7 +22,6 @@ body {
 }
 
 #trapezoid {
-  display: flex;
   flex: (1000, 50);
   width: 10000px;
   height: 150px;
