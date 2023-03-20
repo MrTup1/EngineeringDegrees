@@ -58,3 +58,9 @@ body {
   background: #040a44;
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
+
+#footerRight {
+  position: absolute;
+  right: 0px;
+  margin: 30px;
+}
