@@ -44,19 +44,29 @@ body {
 }
 
 #trapezoid1 {
-  flex: (1000, 50);
-  width: 10000px;
+  min-width: 100%;
+  position: absolute;
+  top: 0px;
+  width: 1000px;
   height: 150px;
   background: #040a44;
+  flex: (1000, 50);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 #trapezoid2 {
-  flex: (1000, 50);
   width: 10000px;
   height: 150px;
   background: #040a44;
+  flex: (1000, 50);
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+}
+
+.headerTrapezoid {
+  flex: (1000, 50);
+  width: 10000px;
+  height: 300px;
+  background: #14cfcf;
 }
 
 #footerRight {
