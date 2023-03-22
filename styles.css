@@ -30,7 +30,15 @@ body {
 }
 
 #title {
-  font-size: 30px;
+  color:white;
+  font-size: 25px;
+  position:relative;
+  vertical-align: middle;
+}
+
+#headeright {
+  position: relative;
+  vertical-align: middle;
 }
 
 .link1 {
@@ -47,7 +55,7 @@ body {
   position: absolute;
   top: 0px;
   width: 10000px;
-  height: 20vh;
+  height: 18vh;
   background: #040a44;
   flex: (1000, 50);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
@@ -65,8 +73,24 @@ body {
   max-width: 100%;
   flex: (1000, 50);
   width: 10000px;
-  height: 40vh;
+  height: 30vh;
+}
+
+#introBanner {
   background: #14cfcf;
+}
+
+#aboutBanner {
+  background: #1CC99F;
+}
+
+
+#pageTitle {
+  color:white;
+  position: relative;
+  font-size: 30px;
+  top: 20vh;
+  text-align: center;
 }
 
 #footerRight {
