@@ -12,11 +12,27 @@ body {
   font-weight: bold;
 }
 
+.headerText {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: calc(20px + 0.5vw);
+  padding-left: 60px;
+  padding-right:60px;
+  padding-top: 60px;
+}
+
+.paragraphText{
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(10px + 0.5vw);
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 15px;
+}
 .header {
   color: white;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: calc(12px + 0.5vw);
   margin: 30px;
   letter-spacing: 1px;
 }
@@ -31,7 +47,7 @@ body {
 
 #title {
   color: white;
-  font-size: 25px;
+  font-size: calc(20px + 0.5vw);
   position: relative;
   vertical-align: middle;
 }
@@ -48,9 +64,16 @@ body {
 
 .content {
   flex: 1 0 auto;
-  padding-top: 12vh;
 }
 
+.line {
+  margin-top: 25px;
+  margin-left: 60px;
+  margin-right:1000px;
+  height: 3px;
+  width: calc(100% - 120px);
+  background-color: black;
+}
 #trapezoid1 {
   max-width: 100%;
   position: absolute;
@@ -63,6 +86,7 @@ body {
 }
 
 #trapezoid2 {
+  margin-top: 30px;
   width: 10000px;
   height: 15vh;
   background: #040a44;
@@ -88,7 +112,7 @@ body {
 #pageTitle {
   color: white;
   position: relative;
-  font-size: 30px;
+  font-size: calc(23px + 0.5vw);
   top: 20vh;
   text-align: center;
 }
@@ -96,4 +120,8 @@ body {
 #footerRight {
   position: relative;
   margin-top: 15px;
+}
+
+#email {
+  font-weight:900;
 }

@@ -15,6 +15,7 @@ function sizeAdjust() {
   let banner = document.querySelector("#introBanner");
   let banner2 = document.querySelector("#aboutBanner");
   let pageTitle = document.querySelector("#pageTitle");
+  
   if (height >= 870) {
     header.style.height = "12vh";
     footer.style.height = "13vh";
