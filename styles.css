@@ -162,6 +162,12 @@ body {
   color: white;
 }
 
+.menuButton:hover{
+  background: #292c4d;
+  color: white;
+}
+
+
 .menuButton--active::after {
   content: "\25b4";
 }
