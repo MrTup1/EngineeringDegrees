@@ -7,7 +7,6 @@ const height =
   document.documentElement.clientHeight ||
   document.body.clientHeight;
 window.onload = sizeAdjust();
-
 function sizeAdjust() {
   let header = document.querySelector("#trapezoid1");
   let footer = document.querySelector("#trapezoid2");
@@ -15,7 +14,7 @@ function sizeAdjust() {
   let banner = document.querySelector("#introBanner");
   let banner2 = document.querySelector("#aboutBanner");
   let pageTitle = document.querySelector("#pageTitle");
-  
+
   if (height >= 870) {
     header.style.height = "12vh";
     footer.style.height = "13vh";
@@ -47,4 +46,21 @@ function sizeAdjust() {
       pageTitle.style.top = "12vh";
     }
   }
+
+  /* Collapsible Menu */
+  document.querySelectorAll(".menuButton").forEach((button) => {
+    button.addEventListener("click", () => {
+      const menuContent = button.nextElementSibling;
+
+      button.classList.toggle("menuButton--active");
+
+      if (button.classList.contains("menuButton--active")) {
+        menuContent.style.marginTop = "10px";
+        menuContent.style.maxHeight = menuContent.scrollHeight + "px";
+      } else {
+        menuContent.style.maxHeight = 0;
+        menuContent.style.marginTop = "-30px";
+      }
+    });
+  });
 }

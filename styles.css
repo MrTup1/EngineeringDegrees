@@ -18,13 +18,14 @@ body {
   font-weight: bold;
   font-size: calc(20px + 0.5vw);
   padding-left: 60px;
-  padding-right:60px;
+  padding-right: 60px;
   padding-top: 60px;
 }
 
-.paragraphText{
-  font-family: 'Open Sans', sans-serif;
-  font-size: calc(10px + 0.5vw);
+.paragraphText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: calc(11px + 0.5vw);
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 15px;
@@ -70,7 +71,7 @@ body {
 .line {
   margin-top: 25px;
   margin-left: 60px;
-  margin-right:1000px;
+  margin-right: 1000px;
   height: 3px;
   width: calc(100% - 120px);
   background-color: black;
@@ -124,5 +125,51 @@ body {
 }
 
 #email {
-  font-weight:900;
+  font-weight: 900;
+}
+
+#hook {
+  padding-top: 50px;
+}
+
+/* Collapsible Menu  */
+
+.menuButton {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: calc(13px + 0.5vw);
+  display: block;
+  width: calc(100% - 120px);
+  padding: 15px;
+  margin-top: 25px;
+  margin-left: 60px;
+  margin-right: 1000px;
+  background: #e6e3e3;
+  border: none;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.menuButton::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.25);
+  margin-right: 30px;
+}
+
+.menuButton--active {
+  background: #292c4d;
+  color: white;
+}
+
+.menuButton--active::after {
+  content: "\25b4";
+}
+
+.menuContent {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
