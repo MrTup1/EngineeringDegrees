@@ -182,7 +182,7 @@ body {
 }
 
 
-/*Individual Degrees*/
+/*Home Page*/
 .homeWrapper {
   display: flex;
   justify-content: space-evenly;
@@ -212,6 +212,46 @@ body {
 
 #mechanicalHome {
   background-color: #81acf0;
+}
+
+#civilHome {
+  background-color: #d9d9d9;
+}
+
+#aerospaceHome {
+  background-color: #81acf0;
+}
+
+#industrialHome {
+  background-color: #d9d9d9;
+}
+
+#biomedicalHome {
+  background-color: #adfc68;;
+}
+
+#environmentalHome {
+  background-color: #adfc68;
+}
+
+#chemicalHome {
+  background-color: #f7766d;
+}
+
+#computerscienceHome {
+  background-color: #81acf0;
+}
+
+#informationHome {
+  background-color: #81acf0
+}
+
+#materialsHome {
+  background-color: yellow;
+}
+
+#othersHome {
+  background-color: #f7766d;
 }
 
 #mechanicalSvg {
