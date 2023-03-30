@@ -47,7 +47,7 @@ function sizeAdjust() {
       pageTitle.style.top = "12vh";
     }
   } else if (homeIcon != null) {
-    footer.style.marginTop = "250px";
+    footer.style.marginTop = "150px";
   }
 
   /* Collapsible Menu */
