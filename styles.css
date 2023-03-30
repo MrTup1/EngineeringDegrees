@@ -132,20 +132,7 @@ body {
   padding-top: 50px;
 }
 
-.homeWrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 
-.homeIcon {
-  top: 18vh;
-  position: relative;
-  height: calc(250px + 1vw);
-  width: calc(250px + 1vw);
-  background-color: red;
-  margin: 10px;
-}
 
 /* Collapsible Menu  */
 
@@ -192,4 +179,47 @@ body {
   transition: max-height 0.2s;
   margin-top: -30px;
   margin-bottom: 20px;
+}
+
+
+/*Individual Degrees*/
+.homeWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.homeIcon {
+  border-radius: 20px;
+  top: 18vh;
+  position: relative;
+  height: calc(250px + 1vw);
+  width: calc(250px + 1vw);
+  background-color: red;
+  margin: 20px;
+  text-align: center;
+}
+
+#iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#electricalHome {
+  background-color: yellow;
+}
+
+#mechanicalHome {
+  background-color: #81acf0;
+}
+
+#mechanicalSvg {
+  margin-top: 30px;
+}
+
+#electricalSvg {
+  margin: auto;
+  display:block;  
+  margin-left: -5px;
 }
