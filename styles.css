@@ -4,7 +4,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   overscroll-behavior-y: none;
 }
 
@@ -88,11 +88,11 @@ body {
 }
 
 #trapezoid2 {
+  position: relative;
   margin-top: 30px;
   width: 10000px;
   height: 15vh;
   background: #040a44;
-  flex: (1000, 50);
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -132,6 +132,21 @@ body {
   padding-top: 50px;
 }
 
+.homeWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.homeIcon {
+  top: 18vh;
+  position: relative;
+  height: calc(250px + 1vw);
+  width: calc(250px + 1vw);
+  background-color: red;
+  margin: 10px;
+}
+
 /* Collapsible Menu  */
 
 .menuButton {
@@ -162,11 +177,10 @@ body {
   color: white;
 }
 
-.menuButton:hover{
+.menuButton:hover {
   background: #292c4d;
   color: white;
 }
-
 
 .menuButton--active::after {
   content: "\25b4";

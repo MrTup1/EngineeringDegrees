@@ -14,6 +14,7 @@ function sizeAdjust() {
   let banner = document.querySelector("#introBanner");
   let banner2 = document.querySelector("#aboutBanner");
   let pageTitle = document.querySelector("#pageTitle");
+  let homeIcon = document.querySelector(".homeIcon");
 
   if (height >= 870) {
     header.style.height = "12vh";
@@ -45,6 +46,8 @@ function sizeAdjust() {
       banner2.style.height = "20vh";
       pageTitle.style.top = "12vh";
     }
+  } else if (homeIcon != null) {
+    footer.style.marginTop = "250px";
   }
 
   /* Collapsible Menu */
