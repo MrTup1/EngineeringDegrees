@@ -255,11 +255,76 @@ body {
 }
 
 #mechanicalSvg {
-  margin-top: 30px;
+  margin-top: 40px;
+  width: 175px;
+  height: 175px;
 }
 
 #electricalSvg {
   margin: auto;
   display:block;  
-  margin-left: -5px;
+  margin-left: 6px;
+  margin-top: 10px;
+}
+
+#aerospaceSvg {
+  margin-top: 40px;
+}
+
+#computerscienceSvg{
+  margin-top: 40px;
+  width: 175px;
+  height: 175px;
+}
+
+#informationSvg {
+  margin-top: 50px;
+  width: 160px;
+  height: 160px;
+}
+
+#environmentalSvg {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+#environmentalSvg path{
+  fill: black;
+}
+
+#biomedicalSvg {
+  margin-top: 30px;
+  width: 175px;
+  height: 175px;
+}
+
+#chemicalSvg {
+  margin-top: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+#othersSvg {
+  margin-top: 35px;
+  width: 200px;
+  height: 200px;
+}
+
+#industrialSvg {
+  margin-top: 35px;
+  width: 175px;
+  height: 175px;
+}
+
+#materialsSvg {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+#biomedicalSvg {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;  
 }
