@@ -132,8 +132,6 @@ body {
   padding-top: 50px;
 }
 
-
-
 /* Collapsible Menu  */
 
 .menuButton {
@@ -181,7 +179,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 /*Home Page*/
 .homeWrapper {
   display: flex;
@@ -227,7 +224,7 @@ body {
 }
 
 #biomedicalHome {
-  background-color: #adfc68;;
+  background-color: #adfc68;
 }
 
 #environmentalHome {
@@ -243,7 +240,7 @@ body {
 }
 
 #informationHome {
-  background-color: #81acf0
+  background-color: #81acf0;
 }
 
 #materialsHome {
@@ -262,7 +259,7 @@ body {
 
 #electricalSvg {
   margin: auto;
-  display:block;  
+  display: block;
   margin-left: 6px;
   margin-top: 10px;
 }
@@ -271,7 +268,7 @@ body {
   margin-top: 40px;
 }
 
-#computerscienceSvg{
+#computerscienceSvg {
   margin-top: 40px;
   width: 175px;
   height: 175px;
@@ -289,7 +286,7 @@ body {
   height: 200px;
 }
 
-#environmentalSvg path{
+#environmentalSvg path {
   fill: black;
 }
 
@@ -326,5 +323,112 @@ body {
 #biomedicalSvg {
   margin-top: 30px;
   width: 200px;
-  height: 200px;  
+  height: 200px;
+}
+
+/* Responsive Layout */
+
+@media (min-height: 870px) {
+  #trapezoid1 {
+    height: 12vh;
+  }
+  #trapezoid2 {
+    height: 13vh;
+  }
+  #introBanner {
+    height: 24vh;
+  }
+  #aboutBanner {
+    height: 24vh;
+  }
+  #pageTitle {
+    top: 14vh;
+  }
+}
+
+@media (min-height: 972px) {
+  #trapezoid1 {
+    height: 10vh;
+  }
+  #trapezoid2 {
+    height: 10vh;
+  }
+  #introBanner {
+    height: 20vh;
+  }
+  #aboutBanner {
+    height: 20vh;
+  }
+  #pageTitle {
+    top: 12vh;
+  }
+}
+
+@media (min-width: 1323px) {
+  .paragraphText {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1155px;
+    font-size: 17.615px;
+  }
+  .menuButton {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1155px;
+    font-size: 19.615px;
+  }
+  .menuContent {
+    width: 1155px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .line {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1155px;
+  }
+  #hook {
+    padding: 0;
+    padding-top: 50px;
+  }
+  .headerText {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1155px;
+    font-size: 26.61px;
+  }
+  #pageTitle {
+    font-size: 29.61px;
+  }
+  #title {
+    font-size: 26.61px;
+  }
+  #footerRight {
+    font-size: 18.61px;
+  }
+  #headerRight {
+    font-size: 18.61px;
+  }
+}
+
+@media (min-width: 2138px) {
+  .homeWrapper {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2136px;
+  }
 }
