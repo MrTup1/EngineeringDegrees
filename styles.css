@@ -111,6 +111,7 @@ body {
   background: #1cc99f;
 }
 
+
 #pageTitle {
   color: white;
   position: relative;
@@ -139,15 +140,15 @@ body {
   font-weight: bold;
   font-size: calc(13px + 0.5vw);
   display: block;
-  width: calc(100% - 120px);
+  width: calc(90%);
   padding: 15px;
-  margin-top: 25px;
-  margin-left: 60px;
-  margin-right: 1000px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
   background: #e6e3e3;
   border: none;
   outline: none;
-  transition: background 0.2s;
+  transition: background 0.1s;
 }
 
 .menuButton::after {
@@ -174,7 +175,7 @@ body {
 .menuContent {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.2s;
+  transition: max-height 0.4s;
   margin-top: -30px;
   margin-bottom: 20px;
 }
@@ -326,6 +327,71 @@ body {
   height: 200px;
 }
 
+
+
+/*Individual Degrees*/
+.contentPic {
+  width: 100vw;
+}
+#mechanicalPic {
+  width: 100vw;
+}
+#electricalBanner {
+  background-color: #edf759;
+}
+
+#mechanicalBanner {
+  background: #3140C1;
+}
+
+#materialBanner {
+  background: #49007a;
+}
+
+#civilBanner {
+  background: #737373;
+}
+
+#computerBanner {
+  background: #005e84;
+}
+
+#industrialBanner {
+  background: #737373;
+}
+
+#biomedicalBanner {
+  background: #3eb823;
+}
+
+#environmentalBanner {
+  background: #3eb823;
+}
+
+#chemicalBanner {
+  background: #b8312c ;
+}
+
+#otherBanner {
+  background: #aa0072;
+}
+
+
+.overlapBox {
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+  display: block;
+  width: calc(100vw - 150px);
+  padding: 15px;
+  top: -100px;
+  height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+}
+
 /* Responsive Layout */
 
 @media (min-height: 870px) {
@@ -335,10 +401,7 @@ body {
   #trapezoid2 {
     height: 13vh;
   }
-  #introBanner {
-    height: 24vh;
-  }
-  #aboutBanner {
+  .headerTrapezoid {
     height: 24vh;
   }
   #pageTitle {
@@ -353,11 +416,8 @@ body {
   #trapezoid2 {
     height: 10vh;
   }
-  #introBanner {
-    height: 20vh;
-  }
-  #aboutBanner {
-    height: 20vh;
+  .headerTrapezoid {
+    height:20vh;
   }
   #pageTitle {
     top: 12vh;
@@ -421,6 +481,15 @@ body {
   #headerRight {
     font-size: 18.61px;
   }
+  .overlapBox {
+    width: 1250px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 2138px) {
@@ -430,5 +499,24 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 2136px;
+  }
+}
+
+@media (min-width: 1496px ) {
+  #mechanicalPic {
+    display:block;
+    width: 1492px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contentPic {
+    display:block;
+    width: 1492px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
