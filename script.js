@@ -14,7 +14,7 @@ statistics.set('civil', [[37100, 70400, 60500],[90500, 318300, 67000],["3.9%","7
 statistics.set('chemical', [[41000, 84400, 70400],[23200, 26900, 9800],["-25.8%","14.0%","1.0%"],["493.6%","110%"]])
 statistics.set('biomedical', [[34000, 77700, 61900],[105000, 17900, 11250],["11.7%","10.0%","5.0%"],["680.4%","251.4%"]])
 statistics.set('environmental', [[34900, 77500, 60500],[52100, 44000, 67000],["23.0%","4.0%","17.30%"],["77.6%","124.0%"]])
-statistics.set('industrial', [[38600, 76200, 57500],[53800, 30100, 25300],["13%","10%","-2%"],["60.6%","110.5%"]])
+statistics.set('industrial', [[38600, 76200, 57500],[53800, 301000, 25300],["13%","10%","-2%"],["60.6%","110.5%"]])
 statistics.set('materials', [[40000, 78600, 56300],["No Info", 22100, "No Info"],["No Info","6.0%","No Info"],["108.3%","No Info"]])
 statistics.set('aerospace', [[40400, 97800, 60900],[40300, 58800, 36400],["No Info","6%","17.3%"],["135.9%","123.9%"]])
 statistics.set('computer', [[49500, 87200, 69500],[553600, 1622200, 327500],["50.2%","25.0%","24.6%"],["24%","110%"]]) 
@@ -46,6 +46,7 @@ function sizeAdjust() {
   let industrial = document.querySelector("#industrial")
   let environmental = document.querySelector("#environmental")
   let others = document.querySelector("#other")
+  const icon = document.querySelector(".homeIcon")
 
   if (mechanical != null) {
     x = statistics.get('mechanical') 
@@ -92,6 +93,12 @@ function sizeAdjust() {
     pageTitle.style.color = "black"
   }
 
+  document.querySelectorAll(".homeIcon").forEach((button) => {
+    button.addEventListener("click", () => {
+      console.log("joe")
+    })
+  })
+
   /* Collapsible Menu */
   document.querySelectorAll(".menuButton").forEach((button) => {
     button.addEventListener("click", () => {
@@ -100,11 +107,11 @@ function sizeAdjust() {
       button.classList.toggle("menuButton--active");
 
       if (button.classList.contains("menuButton--active")) {
-        menuContent.style.marginTop = "10px";
+        menuContent.style.marginBottom = "50px";
         menuContent.style.maxHeight = menuContent.scrollHeight + "px";
       } else {
         menuContent.style.maxHeight = 0;
-        menuContent.style.marginTop = "-30px";
+        menuContent.style.marginBottom = "20px";
       }
     });
   });

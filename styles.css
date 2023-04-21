@@ -19,7 +19,21 @@ body {
   font-size: calc(20px + 0.5vw);
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 60px;
+  padding-top: 30px;
+}
+
+.bigHeader {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: calc(15px + 0.5vw);
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+.individualHeaderTop {
+  padding-top: 0px;
 }
 
 .paragraphText {
@@ -142,13 +156,21 @@ body {
   display: block;
   width: calc(90%);
   padding: 15px;
-  margin-top: 0px;
+  margin-top: -35px;
   margin-left: auto;
   margin-right: auto;
   background: #e6e3e3;
   border: none;
   outline: none;
   transition: background 0.1s;
+}
+
+.menuTop {
+  margin-top: 10px;
+}
+
+.buttonBottom {
+  margin-bottom: 10px;
 }
 
 .menuButton::after {
@@ -176,7 +198,7 @@ body {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.4s;
-  margin-top: -30px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -196,6 +218,7 @@ body {
   background-color: red;
   margin: 20px;
   text-align: center;
+  transition: background 0.2s;
 }
 
 #iconWrapper {
@@ -204,52 +227,29 @@ body {
   align-items: center;
 }
 
-#electricalHome {
+.lightblueHome{
+  background-color: #81acf0;
+}
+
+.yellowHome {
   background-color: yellow;
 }
 
-#mechanicalHome {
-  background-color: #81acf0;
-}
-
-#civilHome {
+.greyHome {
   background-color: #d9d9d9;
 }
 
-#aerospaceHome {
-  background-color: #81acf0;
-}
-
-#industrialHome {
-  background-color: #d9d9d9;
-}
-
-#biomedicalHome {
+.greenHome {
   background-color: #adfc68;
 }
 
-#environmentalHome {
-  background-color: #adfc68;
-}
-
-#chemicalHome {
+.redHome {
   background-color: #f7766d;
 }
 
-#computerscienceHome {
-  background-color: #81acf0;
-}
+.lightblueHome:hover{
+  background-color: darkblue;
 
-#informationHome {
-  background-color: #81acf0;
-}
-
-#materialsHome {
-  background-color: yellow;
-}
-
-#othersHome {
-  background-color: #f7766d;
 }
 
 #mechanicalSvg {
@@ -376,6 +376,9 @@ body {
   background: #aa0072;
 }
 
+.subHeader {
+  font-weight: bold;
+}
 
 .overlapBox {
   border-radius: 20px;
@@ -385,14 +388,67 @@ body {
   width: calc(100vw - 150px);
   padding: 15px;
   top: -100px;
-  height: 1000px;
   margin-left: auto;
   margin-right: auto;
   border: none;
   outline: none;
 }
 
+.jobContent {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.youtube {
+  width: calc(70%);
+  height: 130px;
+  display: block;
+  padding: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background: #e6e3e3;
+  border: none;
+  outline: none;
+}
+
+.ytCaption {
+  display: block;
+  width: calc(90%);
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mainLine {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  height: 3px;
+  width: calc(100%);
+  background-color: #ababab;
+}
+
 /* Responsive Layout */
+
+
+@media (min-width: 600px) {
+  .youtube {
+    height: 250px;
+  }
+}
+
+@media (min-width: 900px) {
+  .youtube {
+    height: 300px;
+  }
+}
+
+
+
 
 @media (min-height: 870px) {
   #trapezoid1 {
@@ -430,7 +486,7 @@ body {
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 1155px;
+    width: 1100px;
     font-size: 17.615px;
   }
   .menuButton {
@@ -489,7 +545,13 @@ body {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+  }  
+  .youtube {
+    height: 454.5px;
   }
+  .ytCaption {
+  }
+
 }
 
 @media (min-width: 2138px) {
@@ -519,4 +581,5 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
 }
