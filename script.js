@@ -94,8 +94,15 @@ function sizeAdjust() {
   }
 
   document.querySelectorAll(".homeIcon").forEach((button) => {
-    button.addEventListener("click", () => {
-      console.log("joe")
+    const homeButton = button
+    const temp = homeButton.firstElementChild
+    const svg = temp.firstElementChild
+    console.log(svg);
+    button.addEventListener("mouseenter", ()  => {
+      svg.style.setProperty("fill", "white", "important");
+    })
+    button.addEventListener("mouseleave", ( )=> {
+      svg.style.fill = "black";
     })
   })
 

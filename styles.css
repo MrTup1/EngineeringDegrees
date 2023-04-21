@@ -221,6 +221,10 @@ body {
   transition: background 0.2s;
 }
 
+svg {
+  transition: fill 0.2s;
+}
+
 #iconWrapper {
   display: flex;
   justify-content: center;
@@ -232,7 +236,7 @@ body {
 }
 
 .yellowHome {
-  background-color: yellow;
+  background-color: #ffff00;
 }
 
 .greyHome {
@@ -244,13 +248,29 @@ body {
 }
 
 .redHome {
-  background-color: #f7766d;
+  background-color: #f7776e;
 }
 
 .lightblueHome:hover{
-  background-color: darkblue;
-
+  background-color: #040a44;
 }
+
+.yellowHome:hover{
+  background-color: #040a44;
+}
+
+.greyHome:hover{
+  background-color: #262626;
+}
+
+.greenHome:hover{
+  background-color: #122601;
+}
+
+.redHome:hover{
+  background-color: #520702;
+}
+
 
 #mechanicalSvg {
   margin-top: 40px;
@@ -287,9 +307,6 @@ body {
   height: 200px;
 }
 
-#environmentalSvg path {
-  fill: black;
-}
 
 #biomedicalSvg {
   margin-top: 30px;
