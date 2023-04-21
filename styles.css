@@ -464,6 +464,19 @@ svg {
 }
 
 /* Responsive Layout */
+@media (max-width: 450px) {
+  .menuContent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menuContent {
+    padding-left: 30px;
+    padding-right: 30px;
+  }  
+}
 
 
 @media (min-width: 600px) {
