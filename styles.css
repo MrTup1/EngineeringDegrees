@@ -235,6 +235,10 @@ svg {
   background-color: #81acf0;
 }
 
+.greenblueHome {
+  background-color: #59e3d3;
+}
+
 .yellowHome {
   background-color: #ffff00;
 }
@@ -252,11 +256,15 @@ svg {
 }
 
 .lightblueHome:hover{
-  background-color: #040a44;
+  background-color: #01105c;
+}
+
+.greenblueHome:hover{
+  background-color: #014d44;
 }
 
 .yellowHome:hover{
-  background-color: #040a44;
+  background-color:#2b1400;
 }
 
 .greyHome:hover{
@@ -264,11 +272,11 @@ svg {
 }
 
 .greenHome:hover{
-  background-color: #122601;
+  background-color: #1c3b01;
 }
 
 .redHome:hover{
-  background-color: #520702;
+  background-color: #6e0902;
 }
 
 
