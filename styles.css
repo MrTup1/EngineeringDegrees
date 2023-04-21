@@ -218,7 +218,8 @@ body {
   background-color: red;
   margin: 20px;
   text-align: center;
-  transition: background 0.2s;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.2s;
 }
 
 svg {
@@ -255,8 +256,13 @@ svg {
   background-color: #f7776e;
 }
 
+.homeIcon:hover{
+  box-shadow: 10px 5px 5px black;
+}
+
 .lightblueHome:hover{
   background-color: #01105c;
+
 }
 
 .greenblueHome:hover{
@@ -574,9 +580,6 @@ svg {
   .youtube {
     height: 454.5px;
   }
-  .ytCaption {
-  }
-
 }
 
 @media (min-width: 2138px) {
