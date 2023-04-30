@@ -125,6 +125,10 @@ body {
   background: #1cc99f;
 }
 
+#compareBanner {
+  background: #4146BD;
+}
+
 
 #pageTitle {
   color: white;
@@ -463,6 +467,61 @@ svg {
   background-color: #ababab;
 }
 
+/*Compare Page */
+.invisBox {
+  display: inline-block;
+  width: 50%;
+}
+
+.invisBox2 {
+  margin-left: 50%;
+  width: 50%;
+}
+.compareBox {
+  display: flex;
+  height: 5rem;
+  background-color: white;
+  width: 100%;
+  border-color: black;
+  border-style: solid;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-right: 0px;
+}
+.compareBox::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.25);
+  margin-left: auto;
+  margin-right: 20px;
+}
+.compareText{
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: -10px;
+}
+
+#compareRight {
+  margin-right: auto;
+  margin-top: -86px;
+}
+
+.leftCompare {
+  position: absolute;
+  top: 0;
+  background-color: #EDEDED;
+  height: 100vh;
+  width: 50%;
+  z-index: -1;
+}
+.rightCompare {
+  margin-left: 50%;
+  background-color: #E6E6E6;
+}
+
 /* Responsive Layout */
 @media (max-width: 450px) {
   .menuContent {
@@ -476,6 +535,15 @@ svg {
     padding-left: 30px;
     padding-right: 30px;
   }  
+}
+
+@media (min-width: 620px) {
+  .compareBox {
+    width: 309.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+  }
 }
 
 
