@@ -153,5 +153,96 @@ function openCompare2() {
   }
 }
 
+function capitalize(s) {
+  return s[0].toUpperCase() + s.slice(1)
+}
+
+
+document.querySelectorAll(".compareButton").forEach((button) => {
+  button.addEventListener("click", () => {
+    let id = event.srcElement.id;
+    let path = id.slice(id.length - 1, id.length)
+    let degree = id.slice(0,-1)
+    var y = 0
+    let compareContent = document.querySelector(".compareContent")
+    let compareBox = document.querySelector(".compareBox")
+    switch (degree) {
+      case "chemical": 
+        y = statistics.get('chemical') 
+        break;
+      case "mechanical": 
+        y = statistics.get('mechanical') 
+        break
+      case "aerospace": 
+        y = statistics.get('aerospace');
+        break
+      case "electrical": 
+        y = statistics.get('electrical');
+        break
+      case "material": 
+        y = statistics.get('materials');
+        break
+      case "civil": 
+        y = statistics.get('civil');
+        break
+      case "industrial": 
+        y = statistics.get('industrial');
+        break
+      case "software": 
+        y = statistics.get('computer');
+        break
+      case "information": 
+        y = statistics.get('information');
+        break
+      case "biomedical": 
+        y = statistics.get('biomedical');
+        break
+      case "environmental": 
+        y = statistics.get('environmental');
+        break
+    } 
+    capitalDegree = capitalize(degree)
+    if (path == "1") {
+      selection = document.getElementById("compareText1")
+      compareContent = document.getElementById("compareContent1")
+
+      path = "left"
+      salary = document.getElementById('salary1')
+      employ = document.getElementById('employ1')
+      jobgrowth = document.getElementById('jobgrowth1')
+      replacement = document.getElementById('replacement1')
+
+      selection.innerHTML = `${capitalDegree}`
+      salary.innerHTML = `UK: £${y[0][0]}<br> US: £${y[0][1]} <br>Canada: £${y[0][2]}`
+      employ.innerHTML = `UK: ${y[1][0]} people <br> US: ${y[1][1]} people <br>Canada: ${y[1][2]} people`
+      jobgrowth.innerHTML = `UK: ${y[2][0]}<br> US: ${y[2][1]}<br>Canada:${y[2][2]}`
+      replacement.innerHTML = `UK: No Info<br> US: ${y[3][0]}<br>Canada: ${y[3][1]}`
+
+    } else {
+      selection = document.getElementById("compareText2")
+      compareContent = document.getElementById("compareContent2")
+
+      path = "right"
+      salary = document.getElementById('salary2')
+      employ = document.getElementById('employ2')
+      jobgrowth = document.getElementById('jobgrowth2')
+      replacement = document.getElementById('replacement2')
+
+      selection.innerHTML = `${capitalDegree}`
+      salary.innerHTML = `UK: £${y[0][0]}<br> US: £${y[0][1]} <br>Canada: £${y[0][2]}`
+      employ.innerHTML = `UK: ${y[1][0]} people <br> US: ${y[1][1]} people <br>Canada: ${y[1][2]} people`
+      jobgrowth.innerHTML = `UK: ${y[2][0]}<br> US: ${y[2][1]}<br>Canada:${y[2][2]}`
+      replacement.innerHTML = `UK: No Info<br> US: ${y[3][0]}<br>Canada: ${y[3][1]}`
+    }
+
+  
+    compareBox.classList.toggle("compareBox--active")
+    compareContent.classList.toggle("compareContent--active")
+
+    compareContent.style.maxHeight = 0;
+    compareContent.style.marginBottom = "20px";
+  })
+})
+
 
 
