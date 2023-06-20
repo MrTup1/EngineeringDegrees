@@ -551,7 +551,9 @@ svg {
   position: absolute;
   top: 0;
   background-color: #EDEDED;
-  height: 100%;
+  margin: auto 10px;
+  width: auto;
+  height: 1100px;
   width: 50%;
   z-index: -1;
 }
@@ -659,6 +661,9 @@ svg {
   #pageTitle {
     top: 14vh;
   }
+  .leftCompare {
+    height: 120%
+  }
 }
 
 @media (min-height: 972px) {
@@ -673,6 +678,9 @@ svg {
   }
   #pageTitle {
     top: 12vh;
+  }
+  .leftCompare {
+    height: 100%
   }
 }
 
