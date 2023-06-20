@@ -551,7 +551,7 @@ svg {
   position: absolute;
   top: 0;
   background-color: #EDEDED;
-  height: 150vh;
+  height: 100%;
   width: 50%;
   z-index: -1;
 }

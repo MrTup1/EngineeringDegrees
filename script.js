@@ -156,6 +156,9 @@ function openCompare2() {
 function capitalize(s) {
   return s[0].toUpperCase() + s.slice(1)
 }
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 
 document.querySelectorAll(".compareButton").forEach((button) => {
@@ -214,7 +217,7 @@ document.querySelectorAll(".compareButton").forEach((button) => {
 
       selection.innerHTML = `${capitalDegree}`
       salary.innerHTML = `UK: £${y[0][0]}<br> US: £${y[0][1]} <br>Canada: £${y[0][2]}`
-      employ.innerHTML = `UK: ${y[1][0]} people <br> US: ${y[1][1]} people <br>Canada: ${y[1][2]} people`
+      employ.innerHTML = `UK: ${numberWithCommas(y[1][0])} people <br> US: ${numberWithCommas(y[1][1])} people <br>Canada: ${numberWithCommas(y[1][2])} people`
       jobgrowth.innerHTML = `UK: ${y[2][0]}<br> US: ${y[2][1]}<br>Canada:${y[2][2]}`
       replacement.innerHTML = `UK: No Info<br> US: ${y[3][0]}<br>Canada: ${y[3][1]}`
 
@@ -230,7 +233,7 @@ document.querySelectorAll(".compareButton").forEach((button) => {
 
       selection.innerHTML = `${capitalDegree}`
       salary.innerHTML = `UK: £${y[0][0]}<br> US: £${y[0][1]} <br>Canada: £${y[0][2]}`
-      employ.innerHTML = `UK: ${y[1][0]} people <br> US: ${y[1][1]} people <br>Canada: ${y[1][2]} people`
+      employ.innerHTML = `UK: ${numberWithCommas(y[1][0])} people <br> US: ${numberWithCommas(y[1][1])} people <br>Canada: ${numberWithCommas(y[1][2])} people`
       jobgrowth.innerHTML = `UK: ${y[2][0]}<br> US: ${y[2][1]}<br>Canada:${y[2][2]}`
       replacement.innerHTML = `UK: No Info<br> US: ${y[3][0]}<br>Canada: ${y[3][1]}`
     }
