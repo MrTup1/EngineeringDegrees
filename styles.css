@@ -599,6 +599,15 @@ svg {
   }
 }
 
+@media (min-width: 400px) {
+  .compareContent {
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
 @media (max-width: 620px) {
   .menuContent {
     padding-left: 30px;
@@ -614,6 +623,7 @@ svg {
   .compareStats {
     padding: 20px;
   }
+
 }
 
 @media (min-width: 620px) {
@@ -629,6 +639,7 @@ svg {
     right: 0;
     margin: auto;
   }
+
 
 }
 
