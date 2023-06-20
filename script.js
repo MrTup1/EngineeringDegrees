@@ -123,5 +123,35 @@ function sizeAdjust() {
     });
   });
 }
+function openCompare() {
+  const compareContent = document.querySelector("#compareContent1")
+  const compareBox = document.querySelector("#compareBox1")
+
+  compareBox.classList.toggle("compareBox--active")
+  compareContent.classList.toggle("compareContent--active")
+  if (compareContent.classList.contains("compareContent--active")) {
+    compareContent.style.marginBottom = "50px";
+    compareContent.style.maxHeight = compareContent.scrollHeight + "px";
+  } else {
+    compareContent.style.maxHeight = 0;
+    compareContent.style.marginBottom = "20px";
+  }
+}
+
+function openCompare2() {
+  const compareContent = document.querySelector("#compareContent2")
+  const compareBox = document.querySelector("#compareRight")
+
+  compareBox.classList.toggle("compareBox--active")
+  compareContent.classList.toggle("compareContent--active")
+  if (compareContent.classList.contains("compareContent--active")) {
+    compareContent.style.marginBottom = "50px";
+    compareContent.style.maxHeight = compareContent.scrollHeight + "px";
+  } else {
+    compareContent.style.maxHeight = 0;
+    compareContent.style.marginBottom = "20px";
+  }
+}
+
 
 

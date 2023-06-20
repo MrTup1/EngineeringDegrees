@@ -468,13 +468,47 @@ svg {
 }
 
 /*Compare Page */
+.compareBoxWrapper {
+  display: flex;
+}
+.compareContent {
+  z-index: 1;
+  position:absolute;
+  background-color: rgba(4,10,68,0.8) ;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
+}
+
+.compareButton {
+  padding: 0;
+  border: none;
+  background: none;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  font-size: 20px;
+  color: white;
+}
+
+.compareButton:hover {
+  color: lightblue;
+}
+
+
+
 .invisBox {
+  position: relative;
   display: inline-block;
   width: 50%;
 }
 
 .invisBox2 {
-  margin-left: 50%;
+  position: relative;
   width: 50%;
 }
 .compareBox {
@@ -498,6 +532,11 @@ svg {
   margin-left: auto;
   margin-right: 20px;
 }
+
+.compareBox--active::after {
+  content: "\25b4";
+}
+
 .compareText{
   font-size: 25px;
   margin-left: auto;
@@ -506,14 +545,13 @@ svg {
 
 #compareRight {
   margin-right: auto;
-  margin-top: -86px;
 }
 
 .leftCompare {
   position: absolute;
   top: 0;
   background-color: #EDEDED;
-  height: 100vh;
+  height: 150vh;
   width: 50%;
   z-index: -1;
 }
@@ -582,6 +620,12 @@ svg {
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
+  }
+  .compareContent {
+    width: 309.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
 }
@@ -687,6 +731,10 @@ svg {
     margin-right: auto;
     width: 1155px;
     font-size: 26.61px;
+  }
+  .compareButton {
+    width: 300px;
+    font-size: 20px;
   }
   .compareHeader {
     margin-left: 50px;

@@ -34,15 +34,46 @@
     </div>
 
     <div class = "content"> 
-      <div class="invisBox">
-        <div class = "compareBox"> 
-          <div class = compareText> Aerospace </div>
-        </div> 
-      </div>
-      <div class = "invisBox2">
-        <div class="compareBox" id = "compareRight">         
-          <div class = compareText> Mechanical </div>
+      <div class="compareBoxWrapper">
+        <div class="invisBox">
+          <button class = "compareBox" id = "compareBox1" onclick = "openCompare()"> 
+            <div class = compareText id = "compareText1"> Aerospace </div>
+          </button> 
+          <div class="compareContent" id = "compareContent1"> 
+            <button class = "compareButton headerText">Mechanical</button>
+            <button class = "compareButton headerText">Aerospace</button>
+            <button class = "compareButton headerText">Electrical</button>
+            <button class = "compareButton headerText">Material</button>
+            <button class = "compareButton headerText">Civil</button>
+            <button class = "compareButton headerText">Industrial</button>
+            <button class = "compareButton headerText">Software</button>
+            <button class = "compareButton headerText">Information</button>
+            <button class = "compareButton headerText">Biomedical</button>
+            <button class = "compareButton headerText">Environmental</button>
+            <button class = "compareButton headerText">Chemical</button>
+          </div>
         </div>
+
+        <div class = "invisBox2">
+          <button class="compareBox" id = "compareRight" onclick = "openCompare2()"> 
+            <div class = compareText id = "compareText2"> Mechanical </div>
+          </button>
+
+          <div class="compareContent" id = "compareContent2">
+            <button class = "compareButton headerText">Mechanical</button>
+            <button class = "compareButton headerText">Aerospace</button>
+            <button class = "compareButton headerText">Electrical</button>
+            <button class = "compareButton headerText">Material</button>
+            <button class = "compareButton headerText">Civil</button>
+            <button class = "compareButton headerText">Industrial</button>
+            <button class = "compareButton headerText">Software</button>
+            <button class = "compareButton headerText">Information</button>
+            <button class = "compareButton headerText">Biomedical</button>
+            <button class = "compareButton headerText">Environmental</button>
+            <button class = "compareButton headerText">Chemical</button>
+          </div>
+        </div>
+
       </div>
       <div class = leftCompare> </div>
       <div class = "leftCompare rightCompare"></div>
